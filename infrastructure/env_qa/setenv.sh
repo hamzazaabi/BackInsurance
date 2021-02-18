@@ -1,0 +1,8 @@
+export CATALINA_OPTS="$CATALINA_OPTS -javaagent:/usr/local/tomcat/apm-agent.jar"
+export CATALINA_OPTS="$CATALINA_OPTS -Delastic.apm.service_name=Stark_CRM"
+export CATALINA_OPTS="$CATALINA_OPTS -Delastic.apm.application_packages=fr.sparkit.crm"
+export CATALINA_OPTS="$CATALINA_OPTS -Delastic.apm.server_urls=http://192.168.1.89:8200"
+export CATALINA_OPTS="$CATALINA_OPTS -Delastic.apm.environment=QA"
+export CATALINA_OPTS="$CATALINA_OPTS -Delastic.apm.transaction_sample_rate=0.0"
+export CATALINA_OPTS="$CATALINA_OPTS -Delastic.apm.span_frames_min_duration=1000"
+export CATALINA_OPTS="$CATALINA_OPTS -Delastic.apm.capture_headers=false"

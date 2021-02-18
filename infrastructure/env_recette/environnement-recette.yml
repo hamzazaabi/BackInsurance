@@ -1,0 +1,11 @@
+version: "2"
+services:
+
+  web:
+    container_name: Stark_Recette_CRM
+    build: .
+    ports:
+      - 9004:8080
+    restart: always
+    environment:
+      CATALINA_OPTS: -Dspring.config.location=/usr/local/tomcat/application-recette.properties -Xmx1024m

@@ -1,0 +1,1 @@
+16-12-2020 13:22:26.0955|ERROR|No enum constant fr.sparkit.crm.enumuration.NotificationParentType.REMINDE_REVENT_REPLAY; nested exception is java.lang.IllegalArgumentException: No enum constant fr.sparkit.crm.enumuration.NotificationParentType.REMINDE_REVENT_REPLAY

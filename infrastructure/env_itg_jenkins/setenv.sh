@@ -1,0 +1,5 @@
+export CATALINA_OPTS="$CATALINA_OPTS -javaagent:/usr/local/tomcat/apm-agent.jar"
+export CATALINA_OPTS="$CATALINA_OPTS -Delastic.apm.service_name=CRM"
+export CATALINA_OPTS="$CATALINA_OPTS -Delastic.apm.application_packages=fr.sparkit.crm"
+export CATALINA_OPTS="$CATALINA_OPTS -Delastic.apm.server_urls=http://35.188.66.241:8200"
+export CATALINA_OPTS="$CATALINA_OPTS -Delastic.apm.environment=Itg"

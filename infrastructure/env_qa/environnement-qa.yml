@@ -1,0 +1,22 @@
+version: "2"
+services:
+
+  web:
+    container_name:  Stark_QA_CRM
+    build: .
+    ports:
+      - 8855:8080
+    restart: always
+    networks:
+      app_net:
+        ipv4_address: 10.1.24.2
+    environment:
+      CATALINA_OPTS: -Dspring.config.location=/usr/local/tomcat/application-qa.properties  -Xmx1024m
+networks:
+  app_net:
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+      - subnet: 10.1.24.0/24
+        gateway: 10.1.24.1
