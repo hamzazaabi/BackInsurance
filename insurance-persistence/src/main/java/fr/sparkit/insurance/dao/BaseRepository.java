@@ -72,6 +72,8 @@ public interface BaseRepository<T, ID extends Serializable> extends JpaRepositor
     @Query("select e from #{#entityName} e where e.id = ?1 and e.isDeleted = false")
     T findOne(ID id);
 
+
+
     @Transactional(readOnly = true)
     @Query("select e from #{#entityName} e where e.id = ?1")
     T findByIdEvenIfIsDeleted(ID id);

@@ -41,4 +41,6 @@ public class Assurance extends  Auditable {
         this.Name=name;
         this.Type=type;
     }
+
+
 }
